@@ -57,7 +57,9 @@ function load_task() {
 
     code = document.getElementById("snippet1");
     text = code.innerHTML;
-    text = text.replace("&lt;TO COMPLETE&gt;", "<span class=\"bold-red\">&lt;TO COMPLETE&gt; </span>")
+
+    text = text.replace("TO COMPLETE", "<span class=\"bold-red\">&lt;TO COMPLETE&gt; </span>")
+
     code.innerHTML = text;
 
 }

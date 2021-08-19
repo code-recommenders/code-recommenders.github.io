@@ -95,7 +95,14 @@ ul img{
 
 }
 
+.bold-red {
+  color: red;
+  font-weight: bold;
+  display:inline-block;
+  overflow: visible;
+ margin-bottom: 0px;
 
+}
 
 /* formatting the tabs with the prediction (e.g., scrolling bar on the left)*/
 
