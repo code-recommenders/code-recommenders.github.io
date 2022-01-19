@@ -393,9 +393,52 @@ table_data_evaluation = [
     [30,"Natural Language to Code Translation", "True","Very High","High","High","High"],
     [30,"DL-based Code Completion", "False","Medium","High","High","Medium"],
 
-
-
 ];
+
+table_data_copilot = [
+
+    [1, "Copilot", "Useful", "close to the final solution"],
+    [1, "None of them", "", "one is close, but misleading"],
+    [2, "T5", "Very Useful", "even if it's not the best option i would prefer this, since it will give me more flexibility, this is not the case, but if i need to perform the extra operation, with this hint i know how to do it. If i do not need it, i can just delete it"],
+    [2, "Copilot", "Very Useful", "it is the final solution"],
+    [4, "Copilot", "Very Useful", "correct recommendation"],
+    [5, "T5", "Very Useful", "Exactly the final solution"],
+    [5, "T5", "Very Useful", "it is the final solution"],
+    [6, "Copilot", "Very Useful", "it matches what was needed"],
+    [6, "Copilot", "Very Useful", "it the right solution"],
+    [6, "Copilot", "Very Useful", "Because the recommendation is correct"],
+    [8, "Copilot", "Very Useful", "it is close to the final solution and gives an idea of how to get there"],
+    [8, "Copilot", "Very Useful", "the correct solution with a generic db name"],
+    [10, "Copilot", "Very Useful", "it matches the needed code"],
+    [10, "Copilot", "Very Useful", "it is the right solution"],
+    [11, "Both", "Very Useful", "i think it's equivalent to the one in red, the red one is better because easier to read"],
+    [12, "Copilot", "Useful", "close to the final solution"],
+    [12, "Copilot", "Slightly useful", "Because it requires less changes"],
+    [14, "Copilot", "Very Useful", "would be the best option, since it also suggest me the behaviour after the condition"],
+    [14, "T5", "Very Useful", "it is the final solution"],
+    [15, "Both", "Very Useful", "right solution"],
+    [15, "Both", "Very Useful", "it is the final solution"],
+    [15, "Both", "Very Useful", "Because it's correct"],
+    [16, "Copilot", "Very Useful", "it is the need code"],
+    [16, "Copilot", "Very Useful", "The recommendation is correct"],
+    [17, "Copilot", "Useful", "it's correct"],
+    [18, "Copilot", "Very Useful", "Because it's correct"],
+    [19, "Both", "Very Useful", "it's equivalent to the correct solution"],
+    [20, "Copilot", "Useful", "it is close to the final solution"],
+    [21, "Copilot", "Slightly useful", "it is close to the final solution"],
+    [21, "None of them", "", "Both suggestions requires more editing than writing the corrected code"],
+    [21, "Copilot", "Very Useful", "it is a very explanatory and readable solution"],
+    [23, "Copilot", "Very Useful", "it's the solution"],
+    [24, "None of them", "", "there is something but both are wrong and miss needed statement"],
+    [25, "Copilot", "Very Useful", "100% correct"],
+    [26, "Copilot", "Very Useful", "This is what i'm most likely to call, especially given the variables i have stored in code above, Plus, gives the right sintax on how to use the server"],
+    [28, "Copilot", "Very Useful", "it is close to the final solution and it is in one line"],
+    [28, "Copilot", "Slightly useful", "Because the recommendation needs to change only the method name to work"],
+    [29, "None of them", "", "not close to solution"],
+    [30, "Both", "Very Useful", "it's just the plain solution"],
+    [30, "Both", "Very Useful", "while different from the solution reported in red it works and contains the minimum instruction needed"],
+
+]
 
 
 var name="export-best"
@@ -451,4 +494,34 @@ table_data_evaluation.forEach(function (rowData) {
 });
 
 document.getElementById(name).appendChild(tableBody);
+
+
+var name="export-copilot"
+
+var tableBody = document.createElement('tbody');
+
+table_data_copilot.forEach(function (rowData) {
+    var row = document.createElement('tr');
+
+
+    for (let i = 0; i < rowData.length; i++) {
+        var cell = document.createElement('td');
+        cellData = rowData[i];
+
+        cell.innerHTML=cellData
+
+        if (i==0){
+            cell.classList.add("text-center");
+
+        }
+
+        row.appendChild(cell);
+    }
+
+    tableBody.appendChild(row);
+});
+
+document.getElementById(name).appendChild(tableBody);
+
+
 

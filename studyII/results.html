@@ -129,7 +129,11 @@
             <div class="mb-5">This page presents the results obtained from the second survey.
               </br>
               In the <b>Best Recommendation</b> tab you will find the best suggestion (from participants' view) among
-              the ones proposed for each task. You can also see the motivation provided by the participants for their selection.
+              the ones proposed for each task for the <b> first round of Study II</b>. You can also see the motivation provided by the participants for their selection.
+
+              </br>
+
+              In the <b>Copilot</b> tab you can find the best suggestion among T5 and Copilot for the <b>second round of Study II</b> together with the justification provided for each selection.
 
               </br>
 
@@ -144,6 +148,8 @@
               <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                 <a class="nav-link active" id="nav-best-tab" data-bs-toggle="tab" href="#nav-best" role="tab"
                   aria-controls="nav-best" aria-selected="true">Best Recommendation</a>
+                <a class="nav-link" id="nav-copilot-tab" data-bs-toggle="tab" href="#nav-copilot" role="tab"
+                  aria-controls="nav-copilot" aria-selected="false">Copilot</a>
                 <a class="nav-link" id="nav-evaluation-tab" data-bs-toggle="tab" href="#nav-evaluation"
                   role="tab" aria-controls="nav-evaluation" aria-selected="false">Proposal Evaluation</a>
               </div>
@@ -155,12 +161,7 @@
 
               <div class="tab-content" id="nav-tabContent">
 
-
-
-
-
                 <!-- best TAB -->
-
 
                 <div class="tab-pane fade show active" id="nav-best" role="tabpanel" aria-labelledby="nav-best-tab">
 
@@ -230,6 +231,77 @@
                     </table>
                   </div>
                 </div>
+
+
+
+                <!-- Copilot TAB -->
+
+
+                <div class="tab-pane fade" id="nav-copilot" role="tabpanel" aria-labelledby="nav-copilot-tab">
+
+
+                  <div class=my-5> This table reports, for each task, the best recommendation chosen by participants (among
+                    the 2 proposed, T5 and Copilot) and
+                    their assessment of its usefulness (Slightly Useful, Useful, Very Useful).
+                  </div>
+
+
+                  <div class="panel panel-primary filterable mt-5">
+
+
+                    <div class="row g-0">
+                      <!-- use g-0 to remove gutters (extra margin)-->
+
+                      <div class="col-md-6 bg-dark text-white py-2 px-4">
+                        <h3 class="panel-title"></h3>
+                      </div>
+                      <div class="col-md-6 bg-dark text-white p-2">
+                        <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                          <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="test" viewBox="0 0 16 16">
+                              <path
+                                d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                          </div>
+                          Filter
+                        </button>
+                        <a href="../xls/Copilot_analysis.xlsx" download="Copilot_analysis.xlsx">
+
+                          <button class="btn btn-default btn-xs text-white float-end">
+                            <div class="svg">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-download" viewBox="0 0 16 16">
+                                <path
+                                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                              </svg>
+                            </div>
+                            Download table
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+
+                    <table class="table table-bordered" id="export-copilot">
+                      <thead>
+                        <tr class="filters">
+                          <th width="10%;"><input type="text" class="form-control" placeholder="Task"></th>
+                          <th width="20%;"><input type="text" class="form-control" placeholder="Best Technique"></th>
+                          <th width="20%;"><input type="text" class="form-control" placeholder="Is Useful"></th>
+                          <th width="50%;"><input type="text" class="form-control" placeholder="Explanation"></th>
+                        </tr>
+                      </thead>
+
+                    </table>
+                  </div>
+                </div>
+
+
+
 
                 <!-- evaluation TAB -->
 
