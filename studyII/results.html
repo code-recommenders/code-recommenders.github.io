@@ -127,19 +127,29 @@
             <p class="col-md-12 fs-5 mt-5">
 
             <div class="mb-5">This page presents the results obtained from the second survey.
+              The first two tabs are referred to the first round while the last two tabs to the second round.
+
               </br>
-              In the <b>Best Recommendation</b> tab you will find the best suggestion (from participants' view) among
+              </br>
+
+              In the <b>Four Recommendations</b> tab you will find the best suggestion (from participants' view) among
               the ones proposed for each task for the <b> first round of Study II</b>. You can also see the motivation provided by the participants for their selection.
 
+              </br>
+
+              In the <b>Four Recommendations Evaluation</b> tab you can find a sample of the evaluation of the recommendations for four of the 
+              characteristics we asked participants to asses (you can download the complete file).
+
+              </br>
               </br>
 
               In the <b>Copilot</b> tab you can find the best suggestion among T5 and Copilot for the <b>second round of Study II</b> together with the justification provided for each selection.
 
               </br>
 
-
-              In the <b>Proposal Evaluation</b> tab you can find a sample of the evaluation of the recommendations for four of the 
+              In the <b>Copilot Evaluation</b> tab you can find a sample of the evaluation of the recommendations for two of the 
               characteristics we asked participants to asses (you can download the complete file).
+            
 
             </div>
 
@@ -147,11 +157,14 @@
             <nav>
               <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                 <a class="nav-link active" id="nav-best-tab" data-bs-toggle="tab" href="#nav-best" role="tab"
-                  aria-controls="nav-best" aria-selected="true">Best Recommendation</a>
+                  aria-controls="nav-best" aria-selected="true">Four Recommendations</a>
+                <a class="nav-link" id="nav-evaluation-tab" data-bs-toggle="tab" href="#nav-evaluation"
+                  role="tab" aria-controls="nav-evaluation" aria-selected="false">Four Recommendations Evaluation</a>
                 <a class="nav-link" id="nav-copilot-tab" data-bs-toggle="tab" href="#nav-copilot" role="tab"
                   aria-controls="nav-copilot" aria-selected="false">Copilot</a>
-                <a class="nav-link" id="nav-evaluation-tab" data-bs-toggle="tab" href="#nav-evaluation"
-                  role="tab" aria-controls="nav-evaluation" aria-selected="false">Proposal Evaluation</a>
+                <a class="nav-link" id="nav-copilot-evaluation-tab" data-bs-toggle="tab" href="#nav-copilot-evaluation" role="tab"
+                  aria-controls="nav-copilot-evaluation" aria-selected="false">Copilot Evaluation</a>
+
               </div>
             </nav>
 
@@ -197,7 +210,7 @@
                           </div>
                           Filter
                         </button>
-                        <a href="../xls/Best_recommendation_analysis.xlsx" download="Best_recommendation_analysis.xlsx">
+                        <a href="../xls/Four_recommendations.xlsx" download="Four_recommendations.xlsx">
 
                           <button class="btn btn-default btn-xs text-white float-end">
                             <div class="svg">
@@ -266,7 +279,7 @@
                           </div>
                           Filter
                         </button>
-                        <a href="../xls/Copilot_analysis.xlsx" download="Copilot_analysis.xlsx">
+                        <a href="../xls/Copilot.xlsx" download="Copilot.xlsx">
 
                           <button class="btn btn-default btn-xs text-white float-end">
                             <div class="svg">
@@ -343,7 +356,7 @@
                           </div>
                           Filter
                         </button>
-                        <a href="../xls/Recommendation_evaluations.xlsx" download="Recommendation_evaluations.xlsx">
+                        <a href="../xls/Four_Recommendations_evaluation.xlsx" download="Four_Recommendations_evaluation.xlsx">
 
                           <button class="btn btn-default btn-xs text-white float-end">
                             <div class="svg">
@@ -383,9 +396,84 @@
 
 
 
+                <!-- evaluation Copilot TAB -->
+
+                <div class="tab-pane fade" id="nav-copilot-evaluation" role="tabpanel"
+                  aria-labelledby="nav-copilot-evaluation-tab">
+
+
+                  <div class=my-5> In this table we report <strong>a sample of</strong> the evaluation performed by
+                    participants on some
+                    characteristics of two recommendations from the T5 model and Copilot.
+
+                    The column "Is useful" will be "True" if the evaluation relates to a recommendation considered as useful.
+                    <br><br>
+                    <!-- If the recommendation he evaluated is the best one that he choses
+                    among the 4 proposed (if any) in the third column we have "True", otherwise (random proposal
+                    evaluation) we have "False".</br> -->
+                    Note that the table only reports 4 out of 15 characteristics evaluated by participants. The full data
+                    is available for download via the "Download table" button below.
+                  </div>
+
+
+                  <div class="panel panel-primary filterable mt-5">
+
+                    <div class="row g-0">
+                      <!-- use g-0 to remove gutters (extra margin)-->
+
+                      <div class="col-md-6 bg-dark text-white py-2 px-4">
+                        <h3 class="panel-title"></h3>
+                      </div>
+                      <div class="col-md-6 bg-dark text-white p-2">
+                        <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                          <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="test" viewBox="0 0 16 16">
+                              <path
+                                d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                          </div>
+                          Filter
+                        </button>
+                        <a href="../xls/Copilot_evaluation.xlsx" download="Copilot_evaluation.xlsx">
+
+                          <button class="btn btn-default btn-xs text-white float-end">
+                            <div class="svg">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-download" viewBox="0 0 16 16">
+                                <path
+                                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                              </svg>
+                            </div>
+                            Download table
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+                    <table class="table table-bordered" id="export-copilot-evaluation">
+                      <thead>
+                        <tr class="filters">
+                          <th width="10%;"><input type="text" class="form-control" placeholder="Task"></th>
+                          <th width="13%;"><input type="text" class="form-control" placeholder="Algorithm"></th>
+                          <th width="10%;"><input type="text" class="form-control" placeholder="Is useful"></th>
+                          <th width="17%;"><input type="text" class="form-control" placeholder="Awareness context"></th>
+                          <th width="17%;"><input type="text" class="form-control" placeholder="Conciseness"></th>
+                          <th width="17%;"><input type="text" class="form-control" placeholder="Step-by-step"></th>
+                          <th width="17%;"><input type="text" class="form-control" placeholder="Precise Typing"></th>
+                        </tr>
+                      </thead>
+
+                    </table>
+                  </div>
+                </div>
+
               </div>
-
-
 
             </div>
           </div>

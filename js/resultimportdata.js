@@ -440,6 +440,78 @@ table_data_copilot = [
 
 ]
 
+table_data_copilot_evaluation=[
+
+    [1, "Copilot", "True", "High", "High", "Not Applicable", "Medium"],
+    [1, "T5", "False", "Medium", "High", "Not Applicable", "Medium"],
+    [1, "Copilot", "False", "Very High", "Very High", "Not Applicable", "High"],
+    [2, "T5", "True", "Very High", "Medium", "Medium", "Medium"],
+    [2, "Copilot", "False", "Very High", "Very High", "Medium", "Medium"],
+    [2, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [2, "T5", "False", "Very High", "High", "Not Applicable", "Not Applicable"],
+    [4, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Medium"],
+    [4, "T5", "False", "Low", "High", "Not Applicable", "Medium"],
+    [5, "T5", "True", "Not Applicable", "Very High", "Not Applicable", "Not Applicable"],
+    [5, "Copilot", "False", "High", "High", "Not Applicable", "Not Applicable"],
+    [5, "T5", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [5, "Copilot", "False", "Very High", "High", "Not Applicable", "Not Applicable"],
+    [6, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [6, "T5", "False", "High", "High", "Not Applicable", "Not Applicable"],
+    [6, "Copilot", "True", "Very High", "Very High", "Very Low", "Very High"],
+    [6, "T5", "False", "Medium", "Very High", "Very Low", "Very High"],
+    [6, "Copilot", "True", "Very High", "Very High", "Medium", "Medium"],
+    [6, "T5", "False", "Very High", "Very High", "Medium", "Medium"],
+    [8, "Copilot", "True", "Very High", "Very Low", "Very Low", "Very High"],
+    [8, "T5", "False", "Low", "Medium", "Very Low", "Very Low"],
+    [8, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [8, "T5", "False", "Low", "Medium", "Not Applicable", "Not Applicable"],
+    [10, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [10, "T5", "False", "Medium", "Low", "Not Applicable", "Not Applicable"],
+    [10, "Copilot", "True", "Very High", "Very High", "Very Low", "Very High"],
+    [10, "T5", "False", "Very Low", "Very Low", "Very Low", "Very Low"],
+    [11, "Both", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [12, "Copilot", "True", "Very High", "Very High", "Very High", "Low"],
+    [12, "T5", "False", "Very Low", "Very High", "Very Low", "Very High"],
+    [12, "Copilot", "True", "High", "Very High", "Low", "High"],
+    [12, "T5", "False", "High", "Very High", "Low", "Low"],
+    [14, "Copilot", "True", "Very High", "High", "Medium", "Medium"],
+    [14, "T5", "False", "High", "Very High", "Medium", "Medium"],
+    [14, "T5", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [14, "Copilot", "False", "Very High", "Low", "Very High", "Not Applicable"],
+    [15, "Both", "True", "Very High", "Very High", "Very High", "Very High"],
+    [15, "Both", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [15, "Both", "True", "Very High", "Very High", "Medium", "Medium"],
+    [16, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [16, "T5", "False", "Low", "High", "Not Applicable", "Not Applicable"],
+    [16, "Copilot", "True", "High", "High", "High", "High"],
+    [16, "T5", "False", "Low", "High", "Medium", "Low"],
+    [17, "Copilot", "True", "Not Applicable", "Not Applicable", "Not Applicable", "Not Applicable"],
+    [18, "Copilot", "True", "Very High", "Very High", "Medium", "Medium"],
+    [18, "T5", "False", "High", "High", "Medium", "Medium"],
+    [19, "Both", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"],
+    [20, "Copilot", "True", "High", "Very High", "Not Applicable", "Not Applicable"],
+    [20, "T5", "False", "Low", "High", "Not Applicable", "Not Applicable"],
+    [21, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Very Low"],
+    [21, "T5", "False", "High", "Medium", "Very High", "Very Low"],
+    [21, "T5", "False", "High", "Medium", "High", "High"],
+    [21, "Copilot", "True", "Very High", "Very High", "Not Applicable", "Low"],
+    [21, "T5", "False", "Low", "Low", "Low", "Low"],
+    [23, "Copilot", "True", "High", "High", "Very High", "High"],
+    [23, "T5", "False", "High", "High", "High", "Medium"],
+    [24, "Copilot", "False", "Medium", "High", "Not Applicable", "Medium"],
+    [25, "Copilot", "True", "Very High", "High", "Very High", "Not Applicable"],
+    [25, "T5", "False", "Medium", "Medium", "Not Applicable", "Not Applicable"],
+    [26, "Copilot", "True", "Very High", "Very High", "Medium", "Medium"],
+    [26, "T5", "False", "Medium", "Low", "Medium", "Medium"],
+    [28, "Copilot", "True", "Very High", "Very High", "Very Low", "Very High"],
+    [28, "T5", "False", "Very High", "Very Low", "Very Low", "Very Low"],
+    [28, "Copilot", "True", "Very High", "Very High", "Low", "Low"],
+    [28, "T5", "False", "High", "High", "Medium", "Medium"],
+    [29, "T5", "False", "Medium", "Medium", "Low", "Not Applicable"],
+    [30, "Both", "True", "Very High", "Very High", "Not Applicable", "Medium"],
+    [30, "Both", "True", "Very High", "Very High", "Not Applicable", "Not Applicable"]
+
+]
 
 var name="export-best"
 
@@ -524,4 +596,30 @@ table_data_copilot.forEach(function (rowData) {
 document.getElementById(name).appendChild(tableBody);
 
 
+var name="export-copilot-evaluation"
+
+var tableBody = document.createElement('tbody');
+
+table_data_copilot_evaluation.forEach(function (rowData) {
+    var row = document.createElement('tr');
+
+
+    for (let i = 0; i < rowData.length; i++) {
+        var cell = document.createElement('td');
+        cellData = rowData[i];
+
+        cell.innerHTML=cellData
+
+        if (i==0){
+            cell.classList.add("text-center");
+
+        }
+
+        row.appendChild(cell);
+    }
+
+    tableBody.appendChild(row);
+});
+
+document.getElementById(name).appendChild(tableBody);
 
