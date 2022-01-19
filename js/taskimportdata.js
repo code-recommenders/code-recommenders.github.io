@@ -237,6 +237,41 @@ table_data_natural2code = [
     "file.write(open('Recognized Speech:', 'rb').read())|||file.write(open('\n', 'rb').read())|||f.write(open('file', 'r').read())|||print(' %s, ' % (1, 2, 3))"
 ]
 
+
+table_data_copilot = [
+    "targetStream.download(path)",
+    "airports_in_asia.append(line[1])",
+    "matrix [0, y] = y",
+    "if distances[i] > maxDistance:",
+    "for i, word in enumerate(words):",
+    "return num3",
+    "mysock.close()",
+    "cursor.execute(\"CREATE DATABASE IF NOT EXISTS my_database\")",
+    "pdfkit.from_string(html, desktop_path + title + '.pdf')",
+    "ftp.quit()",
+    "split()[1])",
+    "i[0].upper()",
+    "row+1):",
+    "in numbers:||| numbers[left_count] = 1|||  left_count -= 1",
+    "csv_in_file:",
+    "data.decode(\"utf-8\")",
+    "show()",
+    "ignores",
+    "read())",
+    ".correct())",
+    "only_name.append(image.split('/')[-1])",
+    "    self._observations.pop(0)",
+    "    count += 1|||    sum += float(line[column_name])",
+    "play_list.insert(tkr.END, item)",
+    "    vid_src = article.find('iframe', class_='youtube-player')['src']||||||    vid_id = vid_src.split('/')[4]|||    vid_id = vid_id.split('?')[0]||||||    yt_link = f'https://youtube.com/watch?v={vid_id}'",
+    "   server.login(sender, password)|||   server.sendmail(sender, receive, message)",
+    "    url = tag.get(\"href)|||    if url is None:|||        continue|||    if \"html\" in url:|||        print(\"\n\" + url)",
+    "file_to_save.write(base64.b64decode(base64_img_bytes))",
+    "    # We only focus on files that have the date in their name|||    if has_date(name):|||        print(name)",
+    "file.write(text)"    
+]
+
+
 var tasks = {};
 
 tasks["description"] = table_data_description
@@ -247,4 +282,6 @@ tasks["retrieval"]=table_data_retrieval
 tasks["IDE"]=table_data_IDE
 tasks["T5"]=table_data_T5
 tasks["N2C"]=table_data_natural2code
+tasks["Copilot"]=table_data_copilot
+
 tasks["validation"]=table_data_validation

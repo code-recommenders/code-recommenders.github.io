@@ -46,6 +46,7 @@ function load_task() {
     document.getElementById("T5").innerHTML = create_masked_code(tasks["T5"][window.curr_task])
     document.getElementById("retrieval").innerHTML = create_masked_code(tasks["retrieval"][window.curr_task])
     document.getElementById("N2C").innerHTML = create_masked_code(tasks["N2C"][window.curr_task])
+    document.getElementById("Copilot").innerHTML = create_masked_code(tasks["Copilot"][window.curr_task])
 
     validation=create_validation(tasks["validation"][window.curr_task])
 
